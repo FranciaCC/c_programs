@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-  double a = 123.456;
-  double b = 50.2;
-  double c = 100.0;
-  double d[] = {a, b, c};
+  int a=100, b=2, c=25, d=4;
+  int result1, result2, result3;
 
-  printf("a=%.3f, b=%.3f, c=%.3f, d=[%.3f, %.3f, %.3f]\n",
-    a, b, c, d[0], d[1], d[2]);
+  result1 = a * b + c * d;
+  result2 = (a * b) + (c * d);
+  result3 = a * (b + c) * d;
+
+  printf("result1=%d, result2=%d, result3=%d\n",
+    result1, result2, result3);
 
   return 0;
 }
