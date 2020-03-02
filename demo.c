@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-  printf("1984 in decimal is %d\n", 1984);
-  printf("1984 in octal is 0%o\n", 1984);
-  printf("1984 in hexadecimal is 0x%x\n", 1984);
-  printf("0123 is octal for %d\n", 0123);
-  printf("0x12f is hexadecimal for %d\n", 0x12f);
+  double a = 123.456;
+  double b = 50.2;
+  double c = 100.0;
+  double d[] = {a, b, c};
+
+  printf("a=%.3f, b=%.3f, c=%.3f, d=[%.3f, %.3f, %.3f]\n",
+    a, b, c, d[0], d[1], d[2]);
+
   return 0;
 }
