@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-  int a=100, b=2, c=25, d=4;
-  int result1, result2, result3;
+  int a = 0;
+  int b = 0;
 
-  result1 = a * b + c * d;
-  result2 = (a * b) + (c * d);
-  result3 = a * (b + c) * d;
+  printf("a=%d, b=%d\n", a, b);
 
-  printf("result1=%d, result2=%d, result3=%d\n",
-    result1, result2, result3);
+  a++;
+  b--;
+
+  printf("a=%d, b=%d\n", a, b);
 
   return 0;
 }
